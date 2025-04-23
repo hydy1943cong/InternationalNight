@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exploring China's Geography</title>
+  <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<body>
+  <header>
+    <h1>Exploring China's Geography</h1>
+    <nav>
+      <a href="index.html">Home</a> | <a href="about.html">Meet the Chinese Kids at Angell</a>
+    </nav>
+  </header>
+  <main class="card-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://cdn.pixabay.com/photo/2016/02/14/12/59/everest-1199431_1280.jpg" alt="Mount Everest">
+          <h3>Reaching the Top: The Himalayas and Mount Everest</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>The Himalayas are the world's tallest mountains, and Mount Everest is the very top – the highest point on Earth, always covered in snow!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://img.freepik.com/premium-photo/zhangjiajie-mountains-china_1048944-30784111.jpg?w=2000" alt="Zhangjiajie Mountains">
+          <h3>Unique Pillars: The Zhangjiajie Mountains</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Imagine tall, thin rock pillars covered in green, like something from the movie Avatar! These mountains are truly special.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://study.com/cimages/multimages/16/450px_china_yangtze_river_map4280589487720255395.png" alt="Yangtze River">
+          <h3>A Giant River: The Long Yangtze</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>The Yangtze River is one of the longest rivers in the world, flowing like a huge blue ribbon across China, helping with travel and farming.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://www.oceansplasticleanup.com/Oceans_Seas_Rivers/Pictures_Rivers_Plastic_Pollution/Yellow_River_Hukou_Waterfalls.jpg" alt="Yellow River">
+          <h3>The Yellow River: A River of Color</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>The Yellow River gets its color from the yellow soil it carries. It's very important for farming and has a long history in China.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://media.istockphoto.com/id/491990549/photo/ancient-chinese-architecture.jpg?s=1024x1024&w=is&k=20&c=1DcIkGvbaXa1Bsgoq01mDDxraQcj9bfHlen8ih7fk6s=" alt="Beijing">
+          <h3>Ancient Grandeur: Beijing</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Beijing is China's capital city with amazing old palaces like the Forbidden City, where emperors used to live a long, long time ago.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://media.istockphoto.com/id/601908650/photo/shanghai-bund-skyline-panorama.jpg?s=1024x1024&w=is&k=20&c=nM54eDmbPrJV6ScmuhiXUKq4VGTZq9KF2rByVlyQx20=" alt="Shanghai">
+          <h3>Skyscrapers and Lights: Shanghai</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Shanghai is a super modern city with tall, shiny buildings called skyscrapers that reach up to the sky! It's a busy and exciting place.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // toggle 'flipped' when any card is clicked or tapped
+    document.querySelectorAll('.flip-card').forEach(card=>{
+      card.addEventListener('click', () => card.classList.toggle('flipped'));
+    });
+  </script>
+</body>
