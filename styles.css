@@ -189,3 +189,195 @@ main {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+
+
+/* ✨ Kid‑friendly Hero Banner (with China‑themed emoji) ✨ */
+.hero{
+  background:url("https://img.freepik.com/free-vector/chinese-new-year-celebration-festive-background_53876-96455.jpg?w=2000")
+             center/cover;
+  color:#fff;text-align:center;padding:140px 20px;
+  position:relative;overflow:hidden;
+}
+
+/* dark overlay for readability */
+.hero::after{
+  content:"";
+  position:absolute;inset:0;
+  background:rgba(139,0,0,.5);
+}
+
+/* 🎏 floating emoji parade */
+
+
+
+
+/* text sits above overlays */
+.hero-content{position:relative;z-index:1;}
+
+.hero h1{
+  font-family:"Comic Sans MS","Baloo 2",cursive;
+  font-size:3.2rem;
+  margin:0 0 .8rem;
+  text-shadow:3px 3px 6px rgba(0,0,0,.4);
+}
+
+.tagline{
+  font-size:1.4rem;
+  margin-bottom:2.2rem;
+  font-weight:600;
+  text-shadow:2px 2px 4px rgba(0,0,0,.3);
+}
+
+/* playful button */
+.cta{
+  background:#ffeb3b;
+  color:#c62828;
+  padding:1rem 2.2rem;
+  border-radius:40px;
+  font-size:1.1rem;
+  font-weight:800;
+  box-shadow:0 4px 10px rgba(0,0,0,.25);
+  text-decoration:none;
+  transition:transform .25s,background .25s;
+}
+.cta:hover{
+  background:#fff176;
+  transform:scale(1.08);
+}
+
+
+/* ───── Kid card size tweaks ───── */
+.kid-card{
+  /* bump width: min 300 px, grow up to 340 px on wider screens */
+  max-width:340px;               /* was about 260‑280 via grid */
+  background:rgba(255,255,255,.65);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:22px;
+  box-shadow:0 6px 16px rgba(0,0,0,.15);
+  transition:transform .35s;
+}
+.kid-card:hover{transform:translateY(-10px);}
+
+/* larger photo */
+.kid-card img{
+  width:100%;
+  height:250px;                  /* was 220px */
+  object-fit:cover;
+}
+
+/* bigger name strip */
+.kid-name{
+  background:lightblue;color:black;
+  padding:.5rem 1.2rem;
+  font-size:1.55rem;             /* was 1.35rem */
+  clip-path:polygon(0 0,100% 0,92% 100%,0 100%);
+}
+
+.kid-card p{
+  padding:.7rem 1.2rem;
+  font-size:1.07rem;             /* slightly larger text */
+}
+
+/* grid gap stays the same but auto‑fit more generous columns */
+.kids-grid{
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); /* was 260px */
+  gap:2.2rem;
+}
+
+
+
+
+/* ─── Hero banner just for History page ─── */
+/* ── Brighter History hero banner ── */
+.hero-history{
+  background:url("https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fhobnjtvfckx1hz2t8bq.webp")
+             center/cover;
+  padding:130px 20px;
+  position:relative;              /* so ::after stays inside */
+  overflow:hidden;
+}
+
+.hero-geo{
+  background:url("https://media.istockphoto.com/id/497443692/photo/landscape-of-guilin.jpg?s=1024x1024&w=is&k=20&c=B8W1pJ5Zz-6zdfrGxQpVeauIpK6tJayaJYNb1S2I5Is=")
+             center/cover;
+  padding:130px 20px;
+  position:relative;              /* so ::after stays inside */
+  overflow:hidden;
+}
+
+/* existing dark overlay (if any) … remove or tone down */
+/* .hero-history::before { ... emoji fall ... } */
+
+
+
+
+/* keep text/emoji above both overlays */
+.hero-history .hero-content ,
+.hero-history ::before{position:relative;z-index:1;}
+
+/* same overlay, text, and button rules you already have for .hero */  
+
+/* ─── Grid layout for flip‑cards (matches other pages) ─── */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:2.4rem;
+  padding:2.5rem 1.2rem;
+}
+
+/* ─── Flip‑card look (reuse your existing rules but add glass) ─── */
+.flip-card{
+  perspective:1000px;
+}
+.flip-card-inner{
+  width:100%;height:460px;transition:transform .6s;transform-style:preserve-3d;
+}
+.flip-card.flipped .flip-card-inner{transform:rotateY(180deg);}
+.flip-card-front,.flip-card-back{
+  position:absolute;inset:0;
+  backface-visibility:hidden;border-radius:18px;overflow:hidden;
+  box-shadow:0 6px 14px rgba(0,0,0,.18);
+}
+/* glass front */
+.flip-card-front{
+  background:rgba(255,255,255,.65);
+  backdrop-filter:blur(8px);
+  display:flex;flex-direction:column;align-items:center;
+}
+.flip-card-front img{
+  width:100%;height:70%;object-fit:cover;
+}
+.flip-card-front h3{margin:1rem;font-size:1.25rem;text-align:center;color:#b91c1c}
+
+/* back */
+.flip-card-back{
+  background:#fffde7;color:#333;transform:rotateY(180deg);
+  display:flex;align-items:center;justify-content:center;padding:1.4rem;
+  font-size:1.07rem;line-height:1.6;
+}
+/* responsive tweak */
+@media(max-width:550px){
+  .flip-card-inner{height:400px;}
+  .flip-card-front h3{font-size:1.1rem;}
+}
+
+/* ─── Red‑lantern hero just for Culture ─── */
+.hero-culture{
+  background:url("https://img.freepik.com/free-vector/gradient-background-tet-new-year-celebration_23-2151104166.jpg?t=st=1745467752~exp=1745471352~hmac=db641f732687c9e0a90ddafe5b0b88b06658dbec1743a7897cb052386d11b528&w=2000") center/cover;
+  padding:130px 20px;
+  position:relative;overflow:hidden;
+}
+
+.hero-culture h1{
+  color:#000;
+}
+
+.site-footer{
+  text-align:center;
+  padding:1rem 0;
+  font-size:0.9rem;
+  color:#555;
+  background:#f0f0f0;      /* light gray strip */
+  border-top:1px solid #e0e0e0;
+}
