@@ -239,7 +239,11 @@ main {
   box-shadow:0 4px 10px rgba(0,0,0,.25);
   text-decoration:none;
   transition:transform .25s,background .25s;
+  white-space:normal;     /* let text wrap between words */
+  word-break:keep-all;  
 }
+
+
 .cta:hover{
   background:#fff176;
   transform:scale(1.08);
@@ -380,4 +384,11 @@ main {
   color:#555;
   background:#f0f0f0;      /* light gray strip */
   border-top:1px solid #e0e0e0;
+}
+
+@media (max-width:480px){
+  .cta{
+    font-size:.9rem;      /* was 1.1rem */
+    padding:.8rem 1.6rem; /* tighten the pill */
+  }
 }
