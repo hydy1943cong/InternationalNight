@@ -383,4 +383,10 @@ nav a {
   }
 }
 
+@media (max-width:480px){
+  .hero h1{
+    font-size:2.0rem;   /* adjust until it fits on one or two lines */
+    line-height:1.2;    /* tighten spacing a bit */
+  }
+}
 
