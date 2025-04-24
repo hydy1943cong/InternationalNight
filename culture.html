@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exploring China's Culture</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Exploring China's Culture</h1>
+    <nav>
+      <a href="index.html">Home</a> | <a href="about.html">Meet the Chinese Kids at Angell</a>
+    </nav>
+  </header>
+  <main class="card-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Jiaozi_in_Shenyang.jpg/1200px-Jiaozi_in_Shenyang.jpg" alt="Chinese Dumplings">
+          <h3>Yummy Pockets: Delicious Dumplings (Jiaozi)</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Dumplings are tasty little pockets filled with meat and veggies! They're a special food eaten during celebrations like Spring Festival.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Dragon_boat_race_in_Macau.jpg/1200px-Dragon_boat_race_in_Macau.jpg" alt="Dragon Boat Festival">
+          <h3>Racing Dragons: The Dragon Boat Festival</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Watch out for the dragon boats! This festival features exciting races in long boats decorated like colorful dragons.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Qi_Baishi_-_Shrimps.jpg/1200px-Qi_Baishi_-_Shrimps.jpg" alt="Chinese Ink Painting">
+          <h3>Elegant Strokes: Chinese Ink Painting</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Using black ink and brushes, artists create beautiful paintings of nature, like mountains, flowers, and animals. It's a very special art form.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/人_r%C3%A9n_-_Chinese_character.svg/1200px-人_r%C3%A9n_-_Chinese_character.svg.png" alt="Chinese Characters">
+          <h3>Picture Words: Interesting Chinese Characters</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Instead of letters, Chinese uses characters! Each one can mean a whole word or idea. See if you can spot the character for "person" (人)!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Chinese_New_Year_in_Singapore_-_Lo_Hei.jpg/1200px-Chinese_New_Year_in_Singapore_-_Lo_Hei.jpg" alt="Spring Festival">
+          <h3>The Big Celebration: Spring Festival (Chinese New Year)</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Spring Festival is like a super big New Year celebration in China! People enjoy special foods, colorful decorations, and exciting dragon dances.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Wushu_training_in_China.jpg/1200px-Wushu_training_in_China.jpg" alt="Kung Fu">
+          <h3>Amazing Moves: The Art of Kung Fu</h3>
+        </div>
+        <div class="flip-card-back">
+          <p>Kung Fu is a Chinese martial art with incredible moves that also teaches respect and focus. You might have seen it in movies!</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    document.querySelectorAll('.flip-card').forEach(card => {
+      card.addEventListener('click', () => card.classList.toggle('flipped'));
+    });
+  </script>
+</body>
+</html>
